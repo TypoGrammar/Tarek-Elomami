@@ -31,9 +31,10 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-373317501-1');
     </script>
+
+    <!-- Tailwind CSS & Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,6 +44,7 @@
         darkMode: 'class',
       }
     </script>
+
     <style>
       body {
         font-family: 'Inter', sans-serif;
@@ -57,31 +59,38 @@
         color: #ffffff;
       }
     </style>
-<script>
-  // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-  if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    document.documentElement.classList.add('dark')
-  } else {
-    document.documentElement.classList.remove('dark')
-  }
-</script>
 
-<link rel="stylesheet" href="/index.css">
-<script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.5",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "vite": "https://aistudiocdn.com/vite@^7.1.12",
-    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.0"
-  }
-}
-</script>
-  <script type="module" crossorigin src="/Tarek-Elomami/assets/index-b1M58bET.js"></script>
-</head>
+    <!-- Theme Mode Script -->
+    <script>
+      if (localStorage.getItem('theme') === 'dark' || 
+          (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+
+    <!-- Import Map -->
+
+
+    <link rel="stylesheet" href="/index.css">
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.5",
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "vite": "https://aistudiocdn.com/vite@^7.1.12",
+        "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.0"
+      }
+    }
+    </script>
+    <script type="module" crossorigin src="/assets/index-BFkCkXqW.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Ch9eZn3x.css">
+  </head>
   <body class="bg-slate-100 text-slate-800 dark:bg-slate-900 dark:text-slate-300">
     <div id="root"></div>
+    <!-- ✅ Corrected entry file -->
   </body>
 </html>
